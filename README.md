@@ -7,10 +7,11 @@
 ## Quick Start (2 terminals)
 
 ### Terminal 1 — Backend
+this backend needs python 3.11 for better uvicorn usage install the required python package to run it
 ```bash
 cd backend
-pip install fastapi uvicorn google-genai
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+py -3.11 -m pip install fastapi "uvicorn[standard]" google-genai
+py -3.11 main.py
 ```
 
 ### Terminal 2 — Frontend
